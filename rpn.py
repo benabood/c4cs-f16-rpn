@@ -16,6 +16,9 @@ def calculate(myarg):
 		try:
 			token = int(token)
 			stack.append(token)
+			# Lines to decrease coverage
+			#if(token == 100):
+			#	print "OMG!"
 		except ValueError:
 			func = operators[token]
 			arg2 = stack.pop()
